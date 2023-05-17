@@ -30,13 +30,14 @@
   </ol>
   <hr>
 
+  <!-- CAPÍTULO 1 -->
   <h2>Capítulo 1: Introdução aos Algoritmos</h2>
   <h2>O que é Algoritmo?</h2>
   <p>No livro <cite><a href="https://www.editoraerica.com.br/algoritmos-logica-para-desenvolvimento-de-programacao-de-computadores/p" target="_blank" title="Link do Site da Editora">Algoritmos - Lógica para Desenvolvimento de Programação de Computadores</a></cite>, José Augusto N. G. Manzano e Jayr Figueiredo de Oliveira definem da seguinte maneira um algoritmo:</p>
 
   <p><q>Algoritmos são conjuntos de passos finitos e organizados que, quando executados, resolvem um determinado problema.</q></p>
 
-  <p>Os algoritmos estão presentes em todas as áreas de nossas vidas mais do que podemos imaginar. Os algoritmos fazem parte no nosso dia-a-dia quando navegamos na internet, assistimos um vídeo no Youtube, jogamos no celular ou num console um jogo qualquer, etc.</p>
+  <p>Os algoritmos estão presentes em todas as áreas de nossas vidas mais do que podemos imaginar. Os algoritmos fazem parte no nosso dia a dia quando navegamos na internet, assistimos um vídeo no Youtube, jogamos no celular ou num console um jogo qualquer, etc.</p>
 
   <p>Atravessar a rua é um algoritmo:</p>
 
@@ -45,6 +46,77 @@
 
   <p>E aprender algoritmos é simples. No início, tentamos criar rotinas para resolver pequenos problemas ou tarefas, como, por exemplo, somar dois números. Conforme os estudos avançam e nosso conhecimento a respeito do assunto melhora, os problemas ou tarefas a serem resolvidos vão ficando mais complexos.</p>
   <hr>
+
+  <!-- CAPÍTULO 2 -->
+  <h2>Capítulo 2: Primeiro Algoritmo</h2>
+  
+  <h3>Relembrando</h3>
+  <p>No geral, algoritmo é todo tipo de rotina que você executa até mesmo no seu dia a dia. Tudo que você faz e é rotina pode ser considerado algoritmo.</p>
+  
+  <h3>Algoritmos Computacionais</h3>
+  <p>São passos a serem seguidos por um <strong>módulo processador</strong> - qualquer equipamento capaz de efetuar processamento - e seus respectivos <strong>usuários</strong> que, quando executados na ordem correta, conseguem <strong>realizar</strong> determinada <strong>tarefa</strong>. Ou seja, são rotinas também, só que executadas pelo computador ou algum outro módulo processador.</p>
+  
+  <h3>Como são criados os algoritmos computacionais?</h3>
+  <img src="imagens/aula02-img01.png" alt="Print da tela">
+  <p>Todo algoritmo começa com a lógica de programação. Essa lógica de programação está na nossa cabeça e desenvolvemos ela através do raciocínio lógico.</p>
+  <p>Após desenvolver sua lógica, podemos partir para uma linguagem de programação qualquer e essa linguagem de programação vai ser utilizada para criar um sistema completo, que é o app ou software que o usuário vai usar.</p>
+
+  <h3>Formas de representar a lógica de programação</h3>
+  <ul>
+    <li>Fluxograma</li>
+    <li>Diagrama de Nassi Shneiderman</li>
+    <li>Portugol, ou pseudocódigo: É a lógica de programação escrita na sua lingua nativa. Não é uma linguagem de programação,  é apenas uma maneira de representar sua lógica de programação. <mark>É essa que será ensinada no curso!</mark></li>
+  </ul>
+
+  <h3>Variáveis</h3>
+  <img src="imagens/aula02-img02.png" alt="Print da tela">
+  <p>Variáveis são espaços na memória que vão guardar valores.</p>
+  <p>E para guardar esses valores, usamos essa estrutura:</p>
+  <code>var identificador: tipo</code>
+  <p>Exemplo:</p>
+  <code>var bola: brinquedo</code>
+  <p>Lê-se: vou guardar na memória a variável bola, que é um tipo de brinquedo.</p>
+  <p>Ou, em algoritmos...</p>
+  <code>var mensagem: caractere</code>
+  <p>Lê-se: vou guardar na memória a variável mensagem, que é do tipo caractere.</p>
+  <img src="imagens/aula02-img03.png" alt="Print da tela">
+
+  <h3>Comandos de saída</h3>
+  <p>escreva e escreval</p>
+  <p><code>var mensagem: caractere</code> Criei uma variável do tipo caractere.</p>
+  <p><code>mensagem &lt;- "Olá, mundo!"</code> Atribuí um valor a essa variável.</p>
+  <p><code>escreva ("mensagem")</code> Vai escrever na tela: mensagem;</p>
+  <p><code>escreva (mensagem)</code> Vai escrever na tela o conteúdo da variável mensagem;</p>
+  <p><code>escreva ("mensagem", mensagem)</code> Vai escrever na tela: mensagem + o conteúdo dessa variável.</p>
+
+  <h3>Comando de atribuição</h3>
+  <p>É formado pelo sinal de menor que e o sinal de menos: <code>&lt;-</code></p>
+  <code>mensagem &lt;- "Olá, Mundo!"</code>
+  <p>Lê-se: a variável mensagem recebe o conteúdo que está entre aspas.</p>
+  
+
+  <h3>Identificadores</h3>
+  <ul>
+    <li>Deve começar com uma <strong>letra</strong></li>
+    <li>Os próximos podem ser <strong>letras</strong> ou <strong>números</strong></li>
+    <li><strong>Não</strong> pode utilizar nenhum <strong>símbolo</strong>, exceto underline <strong>_</strong></li>
+    <li><strong>Não</strong> pode conter <strong>espaços</strong> em branco</li>
+    <li><strong>Não</strong> pode conter letras com <strong>acentos</strong></li>
+    <li><strong>Não</strong> pode ser uma <strong>palavra reservada</strong></li>
+  </ul>
+
+  <h3>Tipos Primitivos</h3>
+  <pre>
+    Tipos de variáveis que a memória do visualg pode guardar:
+    → Inteiro
+    Ex: 1   3   -5   198   0
+    → Real
+    Ex: 0.5   5.0   9.8   -77.3   3.1415
+    → Caractere
+    Ex: "Gustavo"   "Algoritmo"   "123"
+    → Lógico
+    Ex: verdadeiro   falso
+  </pre>
   
 </body>
 
