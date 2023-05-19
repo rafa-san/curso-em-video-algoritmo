@@ -158,6 +158,130 @@
   <img src="imagens/aula04-img03.png" alt="">
 
   <p><q>A melhor maneira de aprender é praticando, por que quando a gente pratica, a gente erra e, quando a gente erra, a gente tenta consertar, e é tentando consertar que você aprende.</q>-Gustavo Guanabara</p>
-</body>
+  <hr>
 
+  <!-- CAPÍTULO 7 -->
+  <h2>Capítulo 7: Estruturas Condicionais 1</h2>
+
+  <h3>Estrutura Condicional Simples</h3>
+  <p>Caso a expressão seja verdadeira, executa-se somente um bloco.</p>
+
+  <p>Estrutura do comando:</p>
+  <pre>
+    Se (expressao) entao
+        Bloco
+    FimSe
+  </pre>
+
+  <p>Exemplo:</p>
+  <p>
+    Se eu tiver dinheiro então <br>
+    vou fazer uma viagem pra Disney.
+  </p>
+
+  <p>Uma forma de representar a frase acima em um algoritmo computacional seria essa:</p>
+  <pre>
+    Se (dinheiro >= 10000) entao
+        Escreva ("Partiu Disney")
+    FimSe
+  </pre>
+
+  <h3>Estrutura Condicional Composta</h3>
+  <p>Caso a expressão seja verdadeira, executa-se um bloco, caso contrário, se for falsa, executa-se outro bloco.</p>
+
+  <p>Estrutura do comando:</p>
+  <pre>
+    Se (expressão) entao
+       Bloco A
+    senao
+       Bloco B
+    FimSe
+  </pre>
+
+  <p>Exemplo:</p>
+  <p>
+    Se eu tiver dinheiro então <br>
+    vou fazer uma viagem pra Disney <br>
+    senão <br>
+    vou ficar em casa
+  </p>
+
+  <p>Representando a frase acima em algoritmo computacional:</p>
+  <pre>
+    Se (dinheiro >= 10000) entao
+       Escreva ("Partiu Disney")
+    senao
+       Escreva ("#chateado")
+    FimSe
+  </pre>
+  <hr>
+
+  <!-- CAPÍTULO 8 -->
+  <h2>Capítulo 8: Estruturas Condicionais 2</h2>
+
+  <h3>Estrutura Condicional Aninhada</h3>
+  
+  <p>Estrutura do comando:</p>
+  <pre>
+    Se (situação 1) entao
+       Bloco A
+    senao
+       Se (situação 2) entao
+          Bloco B
+       senao
+          Bloco C
+       FimSe
+    FimSe
+  </pre>
+  
+  <p>Exemplo:</p>
+  <p>
+    Se eu tiver muito dinheiro então <br>
+    vou fazer uma viagem pra Disney <br>
+    senão Se tiver uma graninha então <br>
+    vou visitar minha cidade natal <br>
+    senão <br>
+    aí sim, vou ficar em casa
+  </p>
+
+  <p>Agora, vamos usar uma linguagem formal de algoritmo para descrever o exemplo acima:</p>
+
+  <pre>
+    Se (dinheiro >= 10000) entao
+       Escreva ("Partiu Disney")
+    senao
+       Se (dinheiro >= 5000) e (dinheiro &lt; 10000) entao
+          Escreva ("Visitar família")
+       senao
+          Escreva ("#chateado")
+       FimSe
+    FimSe
+  </pre>
+
+  <h3>Estrutura de Múltipla Escolha | Escolha...caso</h3>
+
+  <p>Com a estrutura Escolha...caso, você pode testar uma série de valores distintos dentro de uma mesma variável e executar blocos específicos para cada caso.</p>
+
+
+  <p>
+    ========== <br>
+    Importante! <br>
+    Dentro dessa estrutura não é possível usar operadores relacionais como maior que, menor ou igual a, por exemplo. Além disso, deve ser usada apenas para trabalhar com valores inteiros, se trabalhar com números reais, vai precisar usar a estrutura aninhada. <br>
+    ==========
+  </p>
+
+  <p>Estrutura do comando:</p>
+  <pre>
+    Escolha (variável)
+       caso valor
+          Bloco A
+       caso valor
+          Bloco B
+       caso valor
+          Bloco C
+       OutroCaso
+          Bloco D
+    FimEscolha
+  </pre>
+</body>
 </html>
