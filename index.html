@@ -283,5 +283,92 @@
           Bloco D
     FimEscolha
   </pre>
+  <hr>
+
+  <!-- CAPÍTULO 9 -->
+  <h2>Capítulo 9: Estruturas de Repetição 1</h2>
+
+  <p>A estrutura de repetição ENQUANTO vai permitir que você execute blocos de comandos várias vezes e simplificar a forma de representar lógicas que vão construir programas. Nessa estrutura, o teste lógico é feito no início.</p>
+
+<p>Estrutura:</p>
+<pre>
+  Enquanto (expressão) faca
+     bloco
+  FimEnquanto
+</pre>
+
+<pre>
+  Enquanto (não arrumar o quarto)* faca
+     castigo
+  FimEnquanto
+</pre>
+
+<p>*Se arrumar o quarto, estará liberado e sairá da repetição.</p>
+<hr>
+
+ <!-- CAPÍTULO 10 -->
+ <h2>Capítulo 10: Estruturas de Repetição 2</h2>
+
+  <p>A estrutura Repita..Ate é uma estrutura de repetição com teste lógico no final, o que permite que você execute o bloco interno pelo menos uma vez, independente do resultado do teste. Nessa estrutura, o teste lógico é feito no fim.</p>
+
+  <p>Estrutura</p>
+
+  <pre>
+    repita
+       bloco
+    ate (expressao)
+
+    repita
+       castigo
+    Até (arrumar o quarto)*
+  </pre>
+
+  <p>*Se arrumar o quarto, estará liberado e sairá da repetição.</p>
+
+  <h3>Comparação das estruturas:</h3>
+  <img src="imagens/aula10-img01.png" alt="Print da tela">
+  <hr>
+
+  <!-- CAPÍTULO 11 -->
+  <h2>Capítulo 11: Estruturas de Repetição 3</h2>
+
+  <img src="imagens/aula11-img01.png" alt="Print da tela">
+
+  <p>A estrutura Para.. Faça é uma estrutura de repetição com variável de controle, o que permite que você execute o bloco interno uma quantidade determinada de vezes.</p>
+
+  <p>Essa estrutura já vem com a atribuição e com o incremento incluídos.</p>
+
+  <p>O [passo salto] é opcional. O default dele é 1.</p>
+
+  <p>O PARA é diferente das outras duas estruturas de repetição por não precisar utilizar expressões lógicas para resolver o problema.</p>
+
+  <p>Um ponto de atenção: não utilizar essa estrutura quando não souber o número de repetições.</p>
+  <hr>
+
+  <!-- CAPÍTULO 12 -->
+  <h2>Capítulo 12: Procedimentos</h2>
+
+  <p>Procedimento é o primeiro tipo de <strong>rotina</strong> a ser aprendida nesse curso.</p>
+
+  <h3>Rotinas</h3>
+  <img src="imagens/aula12-img01.png" alt="Print da tela">
+  <img src="imagens/aula12-img02.png" alt="Print da tela">
+
+  <h3>Procedimentos</h3>
+  <img src="imagens/aula12-img03.png" alt="Print da tela">
+  <img src="imagens/aula12-img04.png" alt="Print da tela">
+
+  <h3>Passagem de Parâmetro</h3>
+  <h4>Por valor</h4>
+  <p>Quando a passagem é por valor, apenas o valor é passado ao procedimento. Os valores iniciais, no programa principal, não são alterados.</p>
+
+  <p>Esse tipo de passagem não modifica em nada a variável do programa principal.</p>
+  <img src="imagens/aula12-img05.png" alt="Print da tela">
+
+  <h4>Por Referência</h4>
+  <p>Quando a passagem se dá por referência, o parâmetro do procedimento tem uma referência automática ao valor da variável original. Qualquer alteração no parâmetro VAI AFETAR a variável original, no programa principal.</p>
+  <p>Utiliza-se, nesse caso, a palavra VAR para sinalizar que a passagem de parâmetro é por referência. O VAR não que dizer que você esteja declarando uma variável, e sim que você está fazendo uma referência às variáveis do programa principal.</p>
+  <img src="imagens/aula12-img06.png" alt="Print da tela">
+   
 </body>
 </html>
