@@ -288,7 +288,7 @@
   <!-- CAPÍTULO 9 -->
   <h2>Capítulo 9: Estruturas de Repetição 1</h2>
 
-  <p>A estrutura de repetição ENQUANTO vai permitir que você execute blocos de comandos várias vezes e simplificar a forma de representar lógicas que vão construir programas. Nessa estrutura, o teste lógico é feito no início.</p>
+  <p>A estrutura de repetição ENQUANTO vai permitir que você execute blocos de comandos várias vezes e simplificar a forma de representar lógicas que vão construir programas. Nessa estrutura, o teste lógico é feito no início. Perceba também que precisamos do operador lógico <strong>não</strong> para criar o loop.</p>
 
 <p>Estrutura:</p>
 <pre>
@@ -309,7 +309,7 @@
  <!-- CAPÍTULO 10 -->
  <h2>Capítulo 10: Estruturas de Repetição 2</h2>
 
-  <p>A estrutura Repita..Ate é uma estrutura de repetição com teste lógico no final, o que permite que você execute o bloco interno pelo menos uma vez, independente do resultado do teste. Nessa estrutura, o teste lógico é feito no fim.</p>
+  <p>A estrutura Repita..Ate é uma estrutura de repetição com teste lógico no final, o que permite que você execute o bloco interno pelo menos uma vez, independente do resultado do teste. Repita...até é a inversão lógica da estrutura enquanto...faça.</p>
 
   <p>Estrutura</p>
 
@@ -360,7 +360,7 @@
 
   <h3>Passagem de Parâmetro</h3>
   <h4>Por valor</h4>
-  <p>Quando a passagem é por valor, apenas o valor é passado ao procedimento. Os valores iniciais, no programa principal, não são alterados.</p>
+  <p>Quando a passagem é por valor, apenas o valor é passado - ou copiado - pra dentro do parâmetro do procedimento. Os valores iniciais, no programa principal, não são alterados.</p>
 
   <p>Esse tipo de passagem não modifica em nada a variável do programa principal.</p>
   <img src="imagens/aula12-img05.png" alt="Print da tela">
@@ -369,6 +369,140 @@
   <p>Quando a passagem se dá por referência, o parâmetro do procedimento tem uma referência automática ao valor da variável original. Qualquer alteração no parâmetro VAI AFETAR a variável original, no programa principal.</p>
   <p>Utiliza-se, nesse caso, a palavra VAR para sinalizar que a passagem de parâmetro é por referência. O VAR não que dizer que você esteja declarando uma variável, e sim que você está fazendo uma referência às variáveis do programa principal.</p>
   <img src="imagens/aula12-img06.png" alt="Print da tela">
-   
+
+  <h4>Escopo</h4>
+  <p>Escopo é o local onde uma determinada variável vai funcionar.</p>
+  <img src="imagens/aula12-img07.png" alt="Print da tela">
+  <img src="imagens/aula12-img08.png" alt="Print da tela">
+  <hr>
+
+  <!-- CAPÍTULO 13 -->
+  <h2>Capítulo 13: Funções</h2>
+  <img src="imagens/aula13-img01.png" alt="Print da tela">
+
+  <p>Funções são o segundo tipo de rotina a ser aprendida no curso.</p>
+
+  <p>A principal diferença entre usar funcões e procedimentos é que durante um procedimento não tem como retornar um valor diretamente no programa principal, e durante uma função você tem um valor de retorno, ou seja, é possível retornar um resultado.</p>
+
+  <h3>Notas</h3>
+  <p>
+    No exemplo abaixo: <br>
+    <code>funcao soma (a, b: inteiro) : inteiro</code> <br>
+    O último INTEIRO quer dizer que o valor de retorno que essa função dará é também um valor inteiro.
+  </p>
+
+  <p>
+    Já nesse outro exemplo: <br>
+    <code>funcao parOuImpar (v: inteiro): caractere</code> <br>
+    A função parOuImpar vai receber uma variável do tipo inteiro e retornar um valor do tipo caractere.
+  </p>
+
+  <p>O uso de parênteses no RETORNE da função é opcional.</p>
+
+  <p>Ao trabalhar com função, o ideal é não escrever nada dentro do corpo da função, e sim retornar ao algoritmo principal pra que você possa escrever da maneira que achar melhor.</p>
+  <hr>
+
+  <!-- CAPÍTULO 14 -->
+  <h2>Capítulo 14: Vetores</h2>
+  
+  <h3>Definição</h3>
+  <p>Vetores são Variáveis Compostas Homogêneas Unidimensionais, pois conseguem armazenar vários valores de um mesmo tipo em uma mesma variável.</p>
+
+  <p>Um vetor pode ter vários espaços internos, identificados por índices. A maneira correta de se declarar um vetor está na linha a seguir:</p>
+
+  <code>var v: vetor(1..10) de inteiro</code>
+
+  <p>A linha acima vai declarar uma variável v com 10 posições. Para inserir um valor dentro do vetor acima, podemos realizar a seguinte atribuição:</p>
+
+  <code>v(1) &lt;- 100</code>
+
+  <p>Na linha acima, o valor 100 será colocado na posição 1 do vetor v.</p>
+
+  <p>Podemos também, permitir que o usuário digite os valores de cada posição, usando uma estrutura de repetição qualquer. Por exemplo:</p>
+
+  <pre>
+    Para contador &lt;- 1 ate 10 faca
+       Escreva ("Digite um valor: ")
+       Leia v(contador)
+    FimPara
+  </pre>
+
+  <p>A variável contador, do trecho acima, será um valor inteiro que vai contar cada uma das 10 posições. O usuário digitará cada um dos 10 valores e eles serão armazenados no vetor.</p>
+
+  <h3>Notas:</h3>
+  <p>Índice: é uma posição/endereço dentro do vetor.</p>
+
+  <p>Variáveis Compostas Homogêneas Unidimensionais = Vetor</p>
+  <ul>
+    <li>Compostas ↔ variável composta de vários espaços.</li>
+    <li>Homogêneas ↔ todos os espaços da variável são do mesmo tipo</li>
+    <li>Unidimensionais ↔ para identificá-las, é necessário somente um endereço</li>
+  </ul>
+
+  <p>A principal vantagem de se usar vetores é que podemos guardar e recuperar esses valores guardados.</p>
+
+  <p>Em variáveis simples, lemos um valor e a partir do momento em que outro é lido, ele apaga o valor anterior. Não dá para voltar no tempo e dizer em quais posições foram digitados os valores.</p>
+
+  <p>Com vetores temos vários espaços em um mesma variável e, por conta disso, podemos voltar e trabalhar com os valores lidos.</p>
+
+  <h3>Prints</h3>
+  <img src="imagens/aula14-img01.png" alt="Print da tela">
+  <img src="imagens/aula14-img02.png" alt="Print da tela">
+  <img src="imagens/aula14-img03.png" alt="Print da tela">
+  <img src="imagens/aula14-img04.png" alt="Print da tela">
+  <img src="imagens/aula14-img05.png" alt="Print da tela">
+  <img src="imagens/aula14-img06.png" alt="Print da tela">
+  <img src="imagens/aula14-img07.png" alt="Print da tela">
+  <img src="imagens/aula14-img08.png" alt="Print da tela">
+  <img src="imagens/aula14-img09.png" alt="Print da tela">
+  <img src="imagens/aula14-img10.png" alt="Print da tela">
+  
+  <hr>
+
+  <!-- CAPÍTULO 15 -->
+  <h2>Capítulo 15: Matrizes</h2>
+
+  <h3>Definição</h3>
+  <p>Matrizes são Variáveis Compostas Homogêneas Multidimensionais. Ao contrário dos vetores, para identificar um elemento em uma matriz é necessário usar mais de um índice (na maioria dos casos, apenas dois).</p>
+
+  <p>Para declarar uma matriz 3x3, podemos usar a linha:</p>
+
+  <code>m: vetor[1..3, 1..3] de inteiro</code>
+
+  <p>Para referenciar um elemento da matriz declarada acima, fazemos assim:</p>
+
+  <code>m[2,3] &lt;- 5</code>
+
+  <p>O número 5 ficará, dentro dessa matriz, na linha 2 e na coluna 3.</p>
+
+  <h3>Notas</h3>
+  <p>Variáveis Compostas Homogêneas Multidimensionais = Matrizes</p>
+
+  <p>Matriz 3x3 é também conhecida como matriz de terceira ordem.</p>
+
+  <p>O minuto 29:28 dessa aula é muito engraçado!</p>
+
+  <h3>Prints</h3>
+  <img src="imagens/aula15-img01.png" alt="Print da tela">
+  <img src="imagens/aula15-img02.png" alt="Print da tela">
+  <img src="imagens/aula15-img03.png" alt="Print da tela">
+  <img src="imagens/aula15-img04.png" alt="Print da tela">
+  <img src="imagens/aula15-img05.png" alt="Print da tela">
+  <img src="imagens/aula15-img06.png" alt="Print da tela">
+
+  <hr>
+
+  <h2>Visualg: Conteúdo Extra</h2>
+
+  <p>
+    Caso a tela apareça sem nada, basta digitar: <br>
+    ! CTRL espaço
+  </p>
+
+  <p>
+    Para mudar a cor: <br>
+    Mudacor("AMARELO","FRENTE")
+  </p>
+
 </body>
 </html>
