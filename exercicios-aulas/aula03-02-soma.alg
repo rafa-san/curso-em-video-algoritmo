@@ -1,5 +1,5 @@
 Algoritmo "Aula03-02-Soma"
-// Algoritmo para fazer a soma entre dois numeros
+// Algoritmo para fazer a soma entre dois numeros.
 
 Var
 numero1, numero2, somar: Inteiro

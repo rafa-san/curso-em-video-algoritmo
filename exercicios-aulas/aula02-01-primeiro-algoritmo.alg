@@ -1,7 +1,7 @@
 Algoritmo "Aula02-01-Primeiro-Algoritmo"
 // Disciplina  : Curso de Algoritmo
 // Professor   : Gustavo Guanabara
-// Descricao   : Algoritmo para escrever uma frase
+// Descricao   : Algoritmo para escrever uma frase.
 // Aluno       : Rafael Santana
 // Data atual  : 22/04/2023
 

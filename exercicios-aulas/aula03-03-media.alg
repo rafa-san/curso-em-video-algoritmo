@@ -1,5 +1,5 @@
 Algoritmo "Aula03-03-Media"
-// Algoritmo para calcular a media entre dois valores
+// Algoritmo para calcular a media entre dois valores.
 
 Var
 numero1, numero2: inteiro
