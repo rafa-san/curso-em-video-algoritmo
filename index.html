@@ -410,11 +410,11 @@
 
   <p>Um vetor pode ter vários espaços internos, identificados por índices. A maneira correta de se declarar um vetor está na linha a seguir:</p>
 
-  <code>var v: vetor(1..10) de inteiro</code>
+  <code>var v: vetor[1..10] de inteiro</code>
 
   <p>A linha acima vai declarar uma variável v com 10 posições. Para inserir um valor dentro do vetor acima, podemos realizar a seguinte atribuição:</p>
 
-  <code>v(1) &lt;- 100</code>
+  <code>v[1] &lt;- 100</code>
 
   <p>Na linha acima, o valor 100 será colocado na posição 1 do vetor v.</p>
 
@@ -423,7 +423,7 @@
   <pre>
     Para contador &lt;- 1 ate 10 faca
        Escreva ("Digite um valor: ")
-       Leia v(contador)
+       Leia v[contador]
     FimPara
   </pre>
 
