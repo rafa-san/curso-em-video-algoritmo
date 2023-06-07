@@ -9,6 +9,6 @@ Inicio
 escreva ("Digite uma valor: R$ ")
 leia (reais)
 dolar <- reais/4.97
-escreva ("Considerando o real a 4,97, teremos apos a conversao US$", dolar:4:2)
+escreva ("Considerando o dolar a 4,97, teremos apos a conversao US$", dolar:4:2)
 
 Fimalgoritmo
