@@ -1,4 +1,4 @@
-<h1>Projeto Próprio: Curso de Algoritmo</h1>
+<h1>Atividades do Curso de Algoritmo</h1>
 
 <p>Este projeto reúne minhas anotações feitas ao longo do <strong>Curso de Algoritmo</strong>, do canal <strong>Curso em Vídeo</strong>, do professor <strong>Gustavo Guanabara</strong>.</p>
 
