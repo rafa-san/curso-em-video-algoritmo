@@ -1,13 +1,13 @@
 Algoritmo "Passo-01-Exe-001"
 // Algoritmo para escrever um programa que mostre na tela a mensagem:
-// "Ola, Mundo!"
+// "Olá, Mundo!"
 
 Var
 msg: caractere
 
 Inicio
 
-msg <- "Ola, Mundo!"
+msg <- "Olá, Mundo!"
 escreva (msg)
 
 Fimalgoritmo
