@@ -1,8 +1,8 @@
 Algoritmo "Passo-01-Exe-011"
-// Desenvolva uma lógica que leia os valores de A, B e C de uma equação do
+// Desenvolva uma logica que leia os valores de A, B e C de uma equacao do
 // segundo grau e mostre o valor de Delta.
 // Importante: Vale ressaltar que esse algoritmo apenas calcula o valor 
-// de Delta e não resolve a equação completa.
+// de Delta e nao resolve a equacao completa.
 
 Var
 a, b, c, delta: real
@@ -18,6 +18,6 @@ leia (c)
 
 delta <- b^2 - 4 * a * c
 
-escreva ("O valor de Delta é igual a:", delta)
+escreva ("O valor de Delta e igual a:", delta)
 
 Fimalgoritmo

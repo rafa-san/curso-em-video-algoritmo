@@ -7,8 +7,8 @@ nome: caractere
 
 Inicio
 
-escreva ("Qual é o seu nome? ")
+escreva ("Qual e o seu nome? ")
 leia (nome)
-escreva ("Olá ", nome, ", é um prazer te conhecer!")
+escreva ("Ola ", nome, ", e um prazer te conhecer!")
 
 Fimalgoritmo
