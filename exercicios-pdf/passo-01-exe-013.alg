@@ -12,6 +12,6 @@ escreva ("Digite o salario do funcionario: R$")
 leia (salario)
 aumento <- 15
 novoSalario <- salario + (salario * aumento / 100)
-escreva ("O novo salario sera de R$", novoSalario:4:2)
+escreva ("O novo salario sera de R$", novoSalario:5:2)
 
 Fimalgoritmo
