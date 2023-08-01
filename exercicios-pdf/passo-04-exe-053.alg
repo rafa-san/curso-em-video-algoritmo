@@ -16,7 +16,7 @@ Inicio
 i <- 1
 
 enquanto (i <= 4) faca
-   escreval ("Digite a idade da", i,  "o pessoa:")
+   escreval ("Digite a idade da", i, "o pessoa:")
    escreva (">> ")
    leia (idade)
    somaIdade <- somaIdade + idade
