@@ -1,4 +1,4 @@
-Algoritmo "Passo-06-Exe-061"
+Algoritmo "Passo-06-Exe-061-Estrutura-Enquanto"
 // Crie um programa que mostre na tela a seguinte contagem,
 // usando a estrutura faca enquanto:
 // 0 3 6 9 12 15 18 21 24 27 30 Acabou!
