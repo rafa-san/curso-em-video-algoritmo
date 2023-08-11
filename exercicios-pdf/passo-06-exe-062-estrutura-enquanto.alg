@@ -1,4 +1,4 @@
-Algoritmo "Passo-06-Exe-062-Estrutura-Repita"
+Algoritmo "Passo-06-Exe-062-Estrutura-Enquanto"
 // Faca um programa usando a estrutura faca enquanto que leia a idade
 // de varias pessoas. A cada laco, voce devera perguntar para o usuario
 // se ele quer ou nao continuar a digitar dados. No final, quando o
@@ -8,13 +8,13 @@ Algoritmo "Passo-06-Exe-062-Estrutura-Repita"
 // c - Quantas pessoas tem 21 anos ou mais.
 
 Var
-idade, idades_digitadas, idades_total, idade_21: inteiro
+i, idade, idades_digitadas, idades_total, idade_21: inteiro
 media: real
 resposta: caractere
 
 Inicio
 
-repita
+enquanto (i = 0) faca
    escreval ()
    escreval ("Digite uma idade:")
    escreva (">> ")
@@ -29,11 +29,15 @@ repita
    escreval ("Sim [S] ou Nao [N]")
    escreva (">> ")
    leia (resposta)
+   se ((resposta = "N") ou (resposta = "n")) entao
+      interrompa
+   fimse
    limpatela
-ate ((resposta = "N") ou (resposta = "n"))
+fimenquanto
 
 media <- idades_total / idades_digitadas
 
+limpatela
 escreval ()
 escreval ("RESULTADO")
 escreval (idades_digitadas, " idades foram digitadas nesse cadastro")
