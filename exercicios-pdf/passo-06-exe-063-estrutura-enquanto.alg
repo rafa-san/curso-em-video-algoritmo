@@ -24,15 +24,14 @@ enquanto (i > 0) faca
    
    i <- i + 1
    somatorio <- somatorio + numero
-
-   se ((numero < menor_valor) ou (numero = 0)) entao
-      menor_valor <- numero
-   fimse
-
-   se (menor_valor = 0) entao
-      menor_valor <- numero
-   fimse
    
+   se ((menor_valor = 0) ou (numero < menor_valor)) entao
+      menor_valor <- numero
+      se (numero < 0) entao
+         menor_valor <- numero
+      fimse
+   fimse
+
    se ((numero % 2 = 0) e (numero <> 0)) entao
       numero_par <- numero_par + 1
    fimse
