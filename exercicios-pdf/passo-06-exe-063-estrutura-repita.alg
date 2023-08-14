@@ -1,4 +1,4 @@
-Algoritmo "Passo-06-Exe-063-Estrutura-Enquanto"
+Algoritmo "Passo-06-Exe-063-Estrutura-Repita"
 // Crie um programa usando a estrutura faca enquanto que leia
 // varios numeros. A cada laco, pergunte se o usuario quer continuar
 // ou nao. No final, mostre na tela:
@@ -17,7 +17,7 @@ Inicio
 i <- 1
 menor_valor <- 0
 
-enquanto (i > 0) faca
+repita
    escreval ("Digite um numero:")
    escreva (">> ")
    leia (numero)
@@ -29,10 +29,10 @@ enquanto (i > 0) faca
    i <- i + 1
    somatorio <- somatorio + numero
    
-   se (numero < menor_valor) entao
+   se (numero <= menor_valor) entao
       menor_valor <- numero
    fimse
-
+   
    se ((numero % 2 = 0) e (numero <> 0)) entao
       numero_par <- numero_par + 1
    fimse
@@ -41,13 +41,8 @@ enquanto (i > 0) faca
    escreval ("Sim [S] ou Nao [N]")
    escreva (">> ")
    leia (resposta)
-
-   se ((resposta = "N") ou (resposta = "n")) entao
-      interrompa
-   fimse
-   
    limpatela
-fimenquanto
+ate ((resposta = "N") ou (resposta = "n"))
 
 limpatela
 media <- somatorio / (i - 1)
