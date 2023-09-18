@@ -1,0 +1,28 @@
+@media (min-width: 992px) {
+  #navbar {
+    overflow: auto;
+    width: 340px;
+    position: fixed;
+  }
+
+  #navbar h1 {
+    background-color: var(--fundo);
+    font-size: 1.7em;
+    margin: 0 auto;
+  }
+
+  #navbar ul {
+    height: 100vh;
+  }
+
+  #main {
+    margin-left: 330px;
+    padding: 0 8px;
+    width: calc(100% - 350px);
+  }
+
+  .main-section .imagens img {
+    margin: 0 8px;
+    max-width: 48%;
+  }
+}
