@@ -16,13 +16,19 @@
   }
 
   #main {
-    margin-left: 330px;
+    margin-left: 360px;
     padding: 0 8px;
-    width: calc(100% - 350px);
+    width: calc(100% - 390px);
   }
 
   .main-section .imagens img {
-    margin: 0 8px;
-    max-width: 48%;
+    margin: 8px 0;
   }
+
+  /* .uma-imagem::after {
+    content: '';
+    height: 10px;
+    margin: 8px auto;
+    width: calc(100% - 54%);
+  } */
 }

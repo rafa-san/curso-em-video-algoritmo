@@ -21,12 +21,21 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+cite a {
+  color: var(--cor_1);
+  text-decoration: none;
+}
+
+cite a:hover {
+  text-decoration: underline;
+}
+
 hr {
   background-color: var(--cor_1);
   border: none;
   height: 4px;
   margin: 40px auto 16px;
-  width: 100%;
+  width: 90%;
 }
 
 code {
@@ -54,7 +63,15 @@ pre {
 }
 
 /* NAVBAR */
+#navbar,
+#main {
+  border: 1px solid blue;
+  margin: auto;
+  width: 90%;
+}
+
 #navbar h1 {
+  border: 1px solid red;
   color: var(--cor_1);
   font-size: 2.2em;
   margin: 8px auto;
@@ -89,7 +106,8 @@ pre {
 }
 
 /* MAIN */
-#main {
+.main-section {
+  border: 1px solid red;
   margin: 16px auto 40px;
   width: 90%;
 }
@@ -123,13 +141,13 @@ pre {
 }
 
 .main-section .imagens {
-  margin: 16px 0;
+  margin: 16px auto;
   display: flex;
   flex-wrap: wrap;
 }
 
 .main-section .imagens img {
+  height: auto;
   max-width: 100%;
   margin: 8px auto;
-  display: block;
 }
