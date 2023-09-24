@@ -30,48 +30,36 @@ cite a:hover {
   text-decoration: underline;
 }
 
-hr {
-  background-color: var(--cor_1);
-  border: none;
-  height: 4px;
-  margin: 40px auto 16px;
-  width: 90%;
-}
-
 code {
   background-color: var(--fundo);
-  margin: 4px 0;
+  margin: 4px 8px;
   padding: 3px;
   display: inline-block;
 }
 
 code.menor {
-  margin: 0;
+  margin: 1px 0;
   padding: 0 3px;
+  display: inline-block;
 }
-
-/* img {
-  height: auto;
-  width: 100%;
-} */
 
 pre {
   background-color: var(--fundo);
   border-left: 3px solid var(--cor_1);
-  margin: 8px 0;
-  padding: 16px 0;
+  margin: 16px auto;
+  padding: 14px 2px 0;
+  white-space: pre-wrap;
+  width: 98%;
 }
 
 /* NAVBAR */
 #navbar,
 #main {
-  border: 1px solid blue;
-  margin: auto;
+  margin: 8px auto;
   width: 90%;
 }
 
 #navbar h1 {
-  border: 1px solid red;
   color: var(--cor_1);
   font-size: 2.2em;
   margin: 8px auto;
@@ -101,14 +89,13 @@ pre {
 
 #navbar a {
   color: var(--cor_2);
-  font-size: 1.1em;
+  font-size: 1.0em;
   text-decoration: none;
 }
 
 /* MAIN */
 .main-section {
-  border: 1px solid red;
-  margin: 16px auto 40px;
+  margin: 16px auto;
   width: 90%;
 }
 
@@ -116,38 +103,53 @@ pre {
   color: var(--cor_1);
   font-size: 1.8em;
   margin: 8px 0;
-  padding: 24px 0 16px;
+  padding: 16px 8px;
+  text-align: center;
 }
 
 .main-section h2,
 .main-section h3 {
-  margin: 8px 0;
-  padding: 8px 0;
+  margin: 16px 0 8px;
+  padding: 8px;
 }
 
-.main-section p {
+.main-section p,
+.main-section ul {
   font-size: 1.02em;
-  line-height: 1.90em;
+  line-height: 1.95em;
+  margin: 8px 0;
+  padding: 0 8px;
+  text-align: justify;
+}
+
+.main-section ul {
+  list-style-position: inside;
 }
 
 .main-section .exemplo {
+  color: var(--cor_2);
   font-style: italic;
   font-weight: 600;
 }
 
-.main-section ul {
-  font-size: 1.02em;
-  list-style-position: inside;
-}
-
 .main-section .imagens {
   margin: 16px auto;
+  width: 98%;
   display: flex;
   flex-wrap: wrap;
 }
 
 .main-section .imagens img {
   height: auto;
-  max-width: 100%;
+  width: 100%;
   margin: 8px auto;
+}
+
+.main-section .destaque {
+  border: 2px solid var(--cor_2);
+  border-radius: 8px;
+  color: var(--cor_2);
+  margin: 16px auto;
+  padding: 8px;
+  width: 98%;
 }
