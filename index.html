@@ -27,7 +27,8 @@
       <li><a href="#capitulo_10" class="nav-link">Procedimentos</a></li>
       <li><a href="#capitulo_11" class="nav-link">Funções</a></li>
       <li><a href="#capitulo_12" class="nav-link">Vetores</a></li>
-      <li><a href="#capitulo_13" class="nav-link ultimo-nav-link">Matrizes</a></li>
+      <li><a href="#capitulo_13" class="nav-link">Matrizes</a></li>
+      <li><a href="#capitulo_14" class="nav-link">Visualg</a></li>
     </ul>
   </nav>
 
@@ -35,19 +36,20 @@
     <!-- CAPÍTULO 1 -->
     <section id="capitulo_1" class="main-section">
       <header>Introdução aos Algoritmos</header>
+      
       <h2>O que é Algoritmo?</h2>
       <p>No livro <cite><a href="https://www.editoraerica.com.br/algoritmos-logica-para-desenvolvimento-de-programacao-de-computadores/p" target="_blank" title="Link do Site da Editora">Algoritmos - Lógica para Desenvolvimento de Programação de Computadores</a></cite>, José Augusto N. G. Manzano e Jayr Figueiredo de Oliveira definem da seguinte maneira um algoritmo:</p>
       <p><q>Algoritmos são conjuntos de passos finitos e organizados que, quando executados, resolvem um determinado problema.</q></p>
       <p>Os algoritmos estão presentes em todas as áreas de nossas vidas mais do que podemos imaginar. Os algoritmos fazem parte no nosso dia a dia quando navegamos na internet, assistimos um vídeo no Youtube, jogamos no celular ou num console um jogo qualquer, etc.</p>
       <p>Atravessar a rua é um algoritmo:</p>
+
       <div class="imagens">
         <img src="imagens/aula01-img01.png" alt="Print da tela">
         <img src="imagens/aula01-img02.png" alt="Print da tela">
       </div>
+
       <p>E aprender algoritmos é simples. No início, tentamos criar rotinas para resolver pequenos problemas ou tarefas, como, por exemplo, somar dois números. Conforme os estudos avançam e nosso conhecimento a respeito do assunto melhora, os problemas ou tarefas a serem resolvidos vão ficando mais complexos.</p>
     </section>
-    
-    <hr>
     
     <!-- CAPÍTULO 2 -->
     <section id="capitulo_2" class="main-section">
@@ -60,21 +62,27 @@
       <p>São passos a serem seguidos por um <strong>módulo processador</strong> - qualquer equipamento capaz de efetuar processamento - e seus respectivos <strong>usuários</strong> que, quando executados na ordem correta, conseguem <strong>realizar</strong> determinada <strong>tarefa</strong>. Ou seja, são rotinas também, só que executadas pelo computador ou algum outro módulo processador.</p>
       
       <h2>Como são criados os algoritmos computacionais?</h2>
+      
       <div class="imagens uma-imagem">
         <img src="imagens/aula02-img01.png" alt="Print da tela">
       </div>
+
       <p>Todo algoritmo começa com a lógica de programação. Essa lógica de programação está na nossa cabeça e a desenvolvemos através do raciocínio lógico.</p>
       <p>Após desenvolver sua lógica, podemos partir para uma linguagem de programação qualquer e essa linguagem de programação vai ser utilizada para criar um sistema completo, que é o app ou software que o usuário vai usar.</p>
+
       <h2>Formas de representar a lógica de programação</h2>
       <ul>
         <li>Fluxograma</li>
         <li>Diagrama de Nassi Shneiderman</li>
-        <li>Portugol, ou pseudocódigo: É a lógica de programação escrita na sua lingua nativa. Não é uma linguagem de programação,  é apenas uma maneira de representar sua lógica de programação. <strong>É essa que será ensinada no curso!</strong></li>
+        <li>Portugol, ou pseudocódigo: É a lógica de programação escrita na sua lingua nativa. Não é uma linguagem de programação, é apenas uma maneira de representar sua lógica de programação. <strong>É essa que será ensinada no curso!</strong></li>
       </ul>
+
       <h2>Variáveis</h2>
+
       <div class="imagens uma-imagem">
         <img src="imagens/aula02-img02.png" alt="Print da tela">
       </div>
+
       <p>Variáveis são espaços na memória que vão guardar valores.</p>
       <p>E para guardar esses valores, usamos essa estrutura:</p>
       <code>var identificador: tipo</code>
@@ -84,359 +92,369 @@
       <p>Ou, em algoritmos...</p>
       <code>var mensagem: caractere</code>
       <p>Lê-se: vou guardar na memória a variável mensagem, que é do tipo caractere.</p>
+
       <div class="imagens uma-imagem">
         <img src="imagens/aula02-img03.png" alt="Print da tela">
       </div>
+
       <h2>Comando de atribuição</h2>
-      <p>É formado pelo sinal de <strong>menor que</strong> e o sinal de <strong>menos</strong>: <code>&lt;-</code></p>
+      <p>É formado pelo sinal de <strong>menor que</strong> e o sinal de <strong>menos</strong>: <code class="menor">&lt;-</code></p>
       <code>mensagem &lt;- "Olá, Mundo!"</code>
       <p>Lê-se: a variável mensagem recebe o conteúdo que está entre aspas.</p>
-      <h2>Comandos de saída</h2>
-      <p>escreva e escreval</p>
-      <p><code>var mensagem: caractere</code> Criei uma variável do tipo caractere.</p>
-      <p><code>mensagem &lt;- "Olá, mundo!"</code> Atribuí um valor a essa variável.</p>
-      <p><code>escreva ("mensagem")</code> Vai escrever na tela: mensagem;</p>
-      <p><code>escreva (mensagem)</code> Vai escrever na tela o <strong>conteúdo</strong> da variável mensagem;</p>
-      <p><code>escreva ("mensagem", mensagem)</code> Vai escrever na tela: mensagem + o conteúdo dessa variável.</p>
+
+      <h2>Comandos de saída: <code class="menor">escreva</code> & <code class="menor">escreval</code></h2>
+      <p><span class="exemplo">Exemplos:</span></p>
+      <p>O exemplo abaixo vai <strong>exibir na tela</strong> a palavra mensagem:</p>
+      <code>escreva ("mensagem")</code> 
+      <p>Já esse outro exemplo vai <strong>exibir na tela</strong> a palavra mensagem e <strong>pular uma linha:</strong></p>
+      <code>escrevaL ("mensagem")</code>
+
       <h2>Identificadores</h2>
-      <code>mensagem &lt;- "Olá, Mundo!"</code>
-      <p>Regras para o uso de identificadores:</p>
+      <p><span class="exemplo">Exemplos:</span></p>
+      <p>Criar uma variável do tipo caractere:</p>
+      <code>var mensagem: caractere</code>
+      <p>Atribuir um valor a essa variável:</p>
+      <code>mensagem &lt;- "Olá, mundo!"</code>
+      <p>Exibir na tela o <strong>conteúdo</strong> da variável mensagem:</p>
+      <code>escreva (mensagem) // Olá, mundo!</code>
+      <p>Exibir na tela a palavra mensagem + o conteúdo da variável mensagem.</p>
+      <code>escreva ("Mensagem: ", mensagem) // Mensagem: Olá, mundo!</code>
+
+      <h3>Regras para o uso de identificadores:</h3>
       <ul>
-        <li>Deve começar com uma <strong>letra</strong></li>
-        <li>Os próximos podem ser <strong>letras</strong> ou <strong>números</strong></li>
-        <li><strong>Não</strong> pode utilizar nenhum <strong>símbolo</strong>, exceto underline <strong>_</strong></li>
-        <li><strong>Não</strong> pode conter <strong>espaços</strong> em branco</li>
-        <li><strong>Não</strong> pode conter letras com <strong>acentos</strong></li>
-        <li><strong>Não</strong> pode ser uma <strong>palavra reservada</strong></li>
+        <li>Devem começar com uma <strong>letra</strong></li>
+        <li>Os próximos caracteres podem ser <strong>letras</strong> ou <strong>números</strong></li>
+        <li><strong>Não</strong> podem utilizar nenhum <strong>símbolo</strong>, exceto underline <strong>_</strong></li>
+        <li><strong>Não</strong> podem conter <strong>espaços</strong> em branco</li>
+        <li><strong>Não</strong> podem conter letras com <strong>acentos</strong></li>
+        <li><strong>Não</strong> podem ser <strong>palavras reservadas</strong></li>
       </ul>
+
       <h2>Tipos Primitivos</h2>
       <p>São tipos de variáveis que a memória do visualg pode guardar:</p>
-      <p><strong>Inteiro</strong> <br> <span class="exemplo">Ex:</span> 1, 3, -5, 198, 0</p>
-      <p><strong>Real</strong> <br> <span class="exemplo">Ex:</span> 0.5, 5.0, 9.8, -77.3, 3.1415</p>
-      <p><strong>Caractere</strong> <br> <span class="exemplo">Ex:</span> "Gustavo", "Algoritmo", "123"</p>
-      <p><strong>Lógico</strong> <br> <span class="exemplo">Ex:</span> verdadeiro, falso</p>
-    </section>
+      
+      <h3>Inteiro</h3>
+      <p><span class="exemplo">Ex:</span> 1, 3, -5, 198, 0</p>
+      
+      <h3>Real</h3>
+      <p><span class="exemplo">Ex:</span> 0.5, 5.0, 9.8, -77.3, 3.1415</p>
 
-    <hr>
+      <h3>Caractere</h3>
+      <p><span class="exemplo">Ex:</span> "Gustavo", "Algoritmo", "123"</p>
+
+      <h3>Lógico</h3>
+      <p><span class="exemplo">Ex:</span> verdadeiro, falso</p>
+    </section>
 
     <!-- CAPÍTULO 3 -->
     <section id="capitulo_3" class="main-section">
       <header>Comando de Entrada e Operadores</header>
+      
       <h2>Comando de Entrada</h2>
       <p>No Visualg, usamos o comando <strong>leia</strong>.</p>
-      <p>Esse comando recebe os valores digitados pelo usuário para guardá-los na memória.</p>
-      
-      <p>
-        <code>escreva ("Digite um número: ")</code> <br>
-        <code>leia (numero)</code>
-      </p>
+      <p>Esse comando <strong>recebe</strong> os valores digitados pelo usuário para <strong>guardá-los na memória (variável)</strong>.</p>
+      <p class="exemplo">Exemplo:</p>
+      <code>escreva ("Digite um número: ")</code> <br>
+      <code>leia (numero)</code>
+
       <h2>Operadores Aritméticos</h2>
+
       <div class="imagens">
         <img src="imagens/aula03-img01.png" alt="Print da tela">
         <img src="imagens/aula03-img02.png" alt="Print da tela">
       </div>
+
       <h2>Funções Aritméticas</h2>
+
       <div class="imagens uma-imagem">
         <img src="imagens/aula03-img03.png" alt="Print da tela">
       </div>
     </section>
-
-    <hr>
     
     <!-- CAPÍTULO 4 -->
     <section id="capitulo_4" class="main-section">
       <header>Operadores Lógicos e Relacionais</header>
+      
       <h2>Operadores Relacionais</h2>
+      
       <div class="imagens uma-imagem">
-        <img src="imagens/aula04-img04.png" alt="">
+        <img src="imagens/aula04-img04.png" alt="Print da tela">
       </div>
-      <p>Vão criar relações entre variáveis, valores ou expressões e gerar resultados lógicos, <strong>verdadeiro</strong> ou <strong>falso</strong>, sempre.</p>
+      
+      <p>Vão criar relações entre variáveis, valores ou expressões e gerar resultados lógicos <strong>(verdadeiro</strong> ou <strong>falso)</strong>.</p>
+      
       <h2>Operadores Lógicos</h2>
+      
       <div class="imagens">
-        <img src="imagens/aula04-img01.png" alt="">
-        <img src="imagens/aula04-img02.png" alt="">
+        <img src="imagens/aula04-img01.png" alt="Print da tela">
+        <img src="imagens/aula04-img02.png" alt="Print da tela">
       </div>
-      <p>
-        e   = conjunção <br>
-        ou  = disjunção <br>
-        não = negação
-      </p>
-      <p>Não servem para comparar resultados de expressões ou números e sempre retornam resultados lógicos também.</p>
-      <p>Os <strong>operadores relacionais</strong> e os <strong>operadores lógicos</strong> resultam sempre em valores lógicos <strong>VERDADEIRO</strong> ou <strong>FALSO</strong>.</p>
-      <h2>Ordem de Precedência</h2>
-      <div class="imagens uma-imagem">
-        <img src="imagens/aula04-img03.png" alt="">
-      </div>
-      <p><q>A melhor maneira de aprender é praticando, por que quando a gente pratica, a gente erra e, quando a gente erra, a gente tenta consertar, e é tentando consertar que você aprende.</q>-Gustavo Guanabara</p>
-    </section>
 
-    <hr>
+      <p><strong>e</strong> = conjunção | <strong>ou</strong>  = disjunção | <strong>não</strong> = negação</p>
+      <p>Não servem para comparar resultados de expressões ou números e sempre retornam resultados lógicos.</p>
+      <p>Os <strong>operadores relacionais</strong> e os <strong>operadores lógicos</strong> resultam sempre em valores lógicos <strong>verdadeiro</strong> ou <strong>falso</strong>.</p>
+      
+      <h2>Ordem de Precedência</h2>
+      
+      <div class="imagens uma-imagem">
+        <img src="imagens/aula04-img03.png" alt="Print da tela">
+      </div>
+
+      <p class="destaque"><q>A melhor maneira de aprender é praticando, por que quando a gente pratica, a gente erra e, quando a gente erra, a gente tenta consertar, e é tentando consertar que você aprende.</q> <br> -Gustavo Guanabara</p>
+    </section>
 
     <!-- CAPÍTULO 5 -->
     <section id="capitulo_5" class="main-section">
       <header>Estruturas Condicionais 1</header>
+      
       <h2>Estrutura Condicional Simples</h2>
-      <p>Caso a expressão seja verdadeira, executa-se somente um bloco.</p>
+      <p>Caso a expressão seja <strong>verdadeira</strong>, executa-se somente um bloco.</p>
       <p class="exemplo">Estrutura do comando:</p>
       <pre>
-        Se (expressao) entao
-            Bloco
-        FimSe
+      Se (expressao) entao
+        Bloco
+      FimSe
       </pre>
       <p><span class="exemplo">Exemplo:</span></p>
-      <p>
-        Se eu tiver dinheiro então <br>
-        vou fazer uma viagem pra Disney.
-      </p>
+      <p>Se eu tiver dinheiro, então vou fazer uma viagem pra Disney.</p>
       <p>Uma forma de representar a frase acima em um algoritmo computacional seria essa:</p>
       <pre>
-        Se (dinheiro >= 10000) entao
-            Escreva ("Partiu Disney")
-        FimSe
+      Se (dinheiro >= 10000) entao
+        Escreva ("Partiu Disney")
+      FimSe
       </pre>
+
       <h2>Estrutura Condicional Composta</h2>
-      <p>Caso a expressão seja verdadeira, executa-se um bloco, caso contrário, se for falsa, executa-se outro bloco.</p>
+      <p>Caso a expressão seja <strong>verdadeira</strong>, executa-se um bloco, caso contrário, se for <strong>falsa</strong>, executa-se outro bloco.</p>
       <p class="exemplo">Estrutura do comando:</p>
       <pre>
-        Se (expressão) entao
-           Bloco A
-        senao
-           Bloco B
-        FimSe
+      Se (expressão) entao
+        Bloco A
+      senao
+        Bloco B
+      FimSe
       </pre>
       <p><span class="exemplo">Exemplo:</span></p>
-      <p>
-        Se eu tiver dinheiro então <br>
-        vou fazer uma viagem pra Disney <br>
-        senão <br>
-        vou ficar em casa
-      </p>
+      <p>Se eu tiver dinheiro, então vou fazer uma viagem pra Disney. Senão, vou ficar em casa.</p>
       <p>Representando a frase acima em algoritmo computacional:</p>
       <pre>
-        Se (dinheiro >= 10000) entao
-           Escreva ("Partiu Disney")
-        senao
-           Escreva ("#chateado")
-        FimSe
+      Se (dinheiro >= 10000) entao
+        Escreva ("Partiu Disney")
+      senao
+        Escreva ("#chateado")
+      FimSe
       </pre>
     </section>
-
-    <hr>
 
     <!-- CAPÍTULO 6 -->
     <section id="capitulo_6" class="main-section">
       <header>Estruturas Condicionais 2</header>
-      <h2>Estrutura Condicional Aninhada</h2>
       
+      <h2>Estrutura Condicional Aninhada</h2>
       <p class="exemplo">Estrutura do comando:</p>
       <pre>
-        Se (situação 1) entao
-           Bloco A
+      Se (situação 1) entao
+        Bloco A
+      senao
+        Se (situação 2) entao
+          Bloco B
         senao
-           Se (situação 2) entao
-              Bloco B
-           senao
-              Bloco C
-           FimSe
+          Bloco C
         FimSe
+      FimSe
       </pre>
-      
       <p><span class="exemplo">Exemplo:</span></p>
-      <p>
-        Se eu tiver muito dinheiro então <br>
-        vou fazer uma viagem pra Disney <br>
-        senão Se tiver uma graninha então <br>
-        vou visitar minha cidade natal <br>
-        senão <br>
-        aí sim, vou ficar em casa
-      </p>
+      <p>Se eu tiver muito dinheiro, então vou fazer uma viagem pra Disney. Senão, se tiver uma graninha, então vou visitar minha cidade natal. Senão, aí sim, vou ficar em casa.</p>
       <p>Agora, vamos usar uma linguagem formal de algoritmo para descrever o exemplo acima:</p>
       <pre>
-        Se (dinheiro >= 10000) entao
-           Escreva ("Partiu Disney")
+      Se (dinheiro >= 10000) entao
+        Escreva ("Partiu Disney")
+      senao
+        Se (dinheiro >= 5000) e (dinheiro &lt; 10000) entao
+          Escreva ("Visitar família")
         senao
-           Se (dinheiro >= 5000) e (dinheiro &lt; 10000) entao
-              Escreva ("Visitar família")
-           senao
-              Escreva ("#chateado")
-           FimSe
+          Escreva ("#chateado")
         FimSe
+      FimSe
       </pre>
-      <h2>Estrutura de Múltipla Escolha | Escolha...caso</h2>
-      <p>Com a estrutura Escolha...caso, você pode testar uma série de valores distintos dentro de uma mesma variável e executar blocos específicos para cada caso.</p>
-      <p>
-        ========== <br>
-        Importante! <br>
-        Dentro dessa estrutura não é possível usar operadores relacionais como maior que, menor ou igual a, por exemplo. Além disso, deve ser usada apenas para trabalhar com valores inteiros, se trabalhar com números reais, vai precisar usar a estrutura aninhada. <br>
-        ==========
-      </p>
+
+      <h2>Estrutura de Múltipla Escolha: escolha...caso</h2>
+      <p>Com a estrutura <strong>escolha...caso</strong>, você pode testar uma série de valores distintos dentro de uma mesma variável e executar blocos específicos para cada caso.</p>
+      <p class="destaque"><strong>Importante!:</strong> Dentro dessa estrutura não é possível usar operadores relacionais como maior que, menor ou igual a, por exemplo. Além disso, deve ser usada apenas para trabalhar com valores inteiros, se trabalhar com números reais, vai precisar usar a estrutura aninhada.</p>
       <p class="exemplo">Estrutura do comando:</p>
       <pre>
-        Escolha (variável)
-           caso valor
-              Bloco A
-           caso valor
-              Bloco B
-           caso valor
-              Bloco C
-           OutroCaso
-              Bloco D
-        FimEscolha
+      Escolha (variável)
+        caso valor
+          Bloco A
+        caso valor
+          Bloco B
+        caso valor
+          Bloco C
+        OutroCaso
+          Bloco D
+      FimEscolha
       </pre>
     </section>
-
-    <hr>
 
     <!-- CAPÍTULO 7 -->
     <section id="capitulo_7" class="main-section">
       <header>Estruturas de Repetição 1</header>
-      <p>A estrutura de repetição ENQUANTO vai permitir que você execute blocos de comandos várias vezes e simplificar a forma de representar lógicas que vão construir programas. Nessa estrutura, o teste lógico é feito no início. Perceba também que precisamos do operador lógico <strong>não</strong> para criar o loop.</p>
+      <p>A estrutura de repetição <strong>enquanto</strong> vai permitir que você execute blocos de comandos várias vezes e simplificar a forma de representar lógicas que vão construir programas. Nessa estrutura, o <strong>teste lógico é feito no início</strong>. Perceba também que precisamos do operador lógico <strong>não</strong> para criar o loop.</p>
       <p class="exemplo">Estrutura:</p>
       <pre>
-        Enquanto (expressão) faca
-          bloco
-        FimEnquanto
+      Enquanto (expressão) faca
+        bloco
+      FimEnquanto
       </pre>
       <pre>
-        Enquanto (não arrumar o quarto)* faca
-          castigo
-        FimEnquanto
+      Enquanto (não arrumar o quarto)* faca
+        castigo
+      FimEnquanto
       </pre>
-      <p>*Se arrumar o quarto, estará liberado e sairá da repetição.</p>
+      <p><small>*Se arrumar o quarto, estará liberado e sairá da repetição.</small></p>
     </section>
-
-    <hr>
     
     <!-- CAPÍTULO 8 -->
     <section id="capitulo_8" class="main-section">
       <header>Estruturas de Repetição 2</header>
-      <p>A estrutura Repita..Ate é uma estrutura de repetição com teste lógico no final, o que permite que você execute o bloco interno pelo menos uma vez, independente do resultado do teste. Repita...até é a inversão lógica da estrutura enquanto...faça.</p>
+      <p>A estrutura <strong>repita...ate</strong> é uma estrutura de repetição com <strong>teste lógico no final</strong>, o que permite que você execute o bloco interno pelo menos uma vez, independente do resultado do teste. Repita...até é a inversão lógica da estrutura enquanto...faça.</p>
       <p class="exemplo">Estrutura:</p>
       <pre>
-        repita
-          bloco
-        ate (expressao)
-        repita
-          castigo
-        Até (arrumar o quarto)*
+      repita
+        bloco
+      ate (expressao)
+      <br>
+      repita
+        castigo
+      Até (arrumar o quarto)*
       </pre>
-      <p>*Se arrumar o quarto, estará liberado e sairá da repetição.</p>
+      <p><small>*Se arrumar o quarto, estará liberado e sairá da repetição.</small></p>
+      
       <h2>Comparação das estruturas</h2>
+      
       <div class="imagens uma-imagem">
         <img src="imagens/aula10-img01.png" alt="Print da tela">
       </div>
     </section>
 
-    <hr>
-
     <!-- CAPÍTULO 9 -->
     <section id="capitulo_9" class="main-section">
       <header>Estruturas de Repetição 3</header>
+      
       <div class="imagens uma-imagem">
         <img src="imagens/aula11-img01.png" alt="Print da tela">
       </div>
-      <p>A estrutura Para.. Faça é uma estrutura de repetição com variável de controle, o que permite que você execute o bloco interno uma quantidade determinada de vezes.</p>
-      <p>Essa estrutura já vem com a atribuição e com o incremento incluídos.</p>
+      
+      <p>A estrutura <strong>para...faça</strong> é uma estrutura de repetição com <strong>variável de controle</strong>, o que permite que você execute o bloco interno uma quantidade determinada de vezes.</p>
+      <p>Essa estrutura já inclui a atribuição e o incremento.</p>
       <p>O [passo salto] é opcional. O default dele é 1.</p>
-      <p>O PARA é diferente das outras duas estruturas de repetição por não precisar utilizar expressões lógicas para resolver o problema.</p>
+      <p>O <code class="menor">para</code> é diferente das outras duas estruturas de repetição por <strong>não precisar utilizar expressões lógicas</strong> para resolver o problema.</p>
       <p>Um ponto de atenção: não utilizar essa estrutura quando não souber o número de repetições.</p>
     </section>
-
-    <hr>
 
     <!-- CAPÍTULO 10 -->
     <section id="capitulo_10" class="main-section">
       <header>Procedimentos</header>
       <p>Procedimento é o primeiro tipo de <strong>rotina</strong> a ser aprendida nesse curso.</p>
+      
       <h2>Rotinas</h2>
+      
       <div class="imagens">
         <img src="imagens/aula12-img01.png" alt="Print da tela">
         <img src="imagens/aula12-img02.png" alt="Print da tela">
       </div>
+      
       <h2>Procedimentos</h2>
+      
       <div class="imagens">
         <img src="imagens/aula12-img03.png" alt="Print da tela">
         <img src="imagens/aula12-img04.png" alt="Print da tela">
       </div>
+      
       <h2>Passagem de Parâmetro</h2>
+      
       <h3>Por valor</h3>
-      <p>Quando a passagem é por valor, apenas o valor é passado - ou copiado - pra dentro do parâmetro do procedimento. Os valores iniciais, no programa principal, não são alterados.</p>
-      <p>Esse tipo de passagem não modifica em nada a variável do programa principal.</p>
+      <p>Quando a passagem é por valor, <strong>apenas o valor é passado</strong> - ou copiado - pra dentro do parâmetro do procedimento. Os valores iniciais, no programa principal, não são alterados.</p>
+      <p>Esse tipo de passagem <strong>não modifica em nada</strong> a variável do programa principal.</p>
+      
       <div class="imagens uma-imagem">
         <img src="imagens/aula12-img05.png" alt="Print da tela">
       </div>
+      
       <h3>Por Referência</h3>
-      <p>Quando a passagem se dá por referência, o parâmetro do procedimento tem uma referência automática ao valor da variável original. Qualquer alteração no parâmetro VAI AFETAR a variável original, no programa principal.</p>
-      <p>Utiliza-se, nesse caso, a palavra <code class="menor">var</code> para sinalizar que a passagem de parâmetro é por referência. O <code class="menor">var</code> não que dizer que você esteja declarando uma variável, e sim que você está fazendo uma referência às variáveis do programa principal.</p>
+      <p>Quando a passagem se dá por referência, o parâmetro do procedimento tem uma referência automática em relação ao valor da variável original. Qualquer alteração no parâmetro <strong>vai afetar</strong> a variável original, no programa principal.</p>
+      <p>Utiliza-se, nesse caso, a palavra <code class="menor">var</code> para sinalizar que a passagem de parâmetro é por referência. O <code class="menor">var</code> não quer dizer que você esteja declarando uma variável, e sim que você está fazendo uma referência às variáveis do programa principal.</p>
+      
       <div class="imagens uma-imagem">
         <img src="imagens/aula12-img06.png" alt="Print da tela">
       </div>
+      
       <h3>Escopo</h3>
-      <p>Escopo é o local onde uma determinada variável vai funcionar.</p>
+      <p>Escopo é o <strong>local</strong> onde uma determinada variável vai funcionar.</p>
+      
       <div class="imagens">
         <img src="imagens/aula12-img07.png" alt="Print da tela">
         <img src="imagens/aula12-img08.png" alt="Print da tela">
       </div>
     </section>
 
-    <hr>
-
     <!-- CAPÍTULO 11 -->
     <section id="capitulo_11" class="main-section">
       <header>Funções</header>
+      
       <div class="imagens uma-imagem">
         <img src="imagens/aula13-img01.png" alt="Print da tela">
       </div>
-      <p>Funções são o segundo tipo de rotina a ser aprendida no curso.</p>
-      <p>A principal diferença entre usar funcões e procedimentos é que durante um procedimento não tem como retornar um valor diretamente no programa principal, e durante uma função você tem um valor de retorno, ou seja, é possível retornar um resultado.</p>
+      
+      <p><strong>Funções</strong> são o segundo tipo de rotina a ser aprendida no curso.</p>
+      <p>A <strong>principal diferença</strong> entre usar <strong>funcões</strong> e <strong>procedimentos</strong> é que durante um procedimento não tem como retornar um valor diretamente no programa principal, e durante uma função você tem um valor de retorno, ou seja, é possível retornar um resultado.</p>
+      
       <h2>Notas</h2>
-      <p>
-        No exemplo abaixo: <br>
-        <code>funcao soma (a, b: inteiro) : inteiro</code> <br>
-        O último <code class="menor">inteiro</code> quer dizer que o valor de retorno que essa função dará é também um valor inteiro.
+      <p>No exemplo abaixo: </p>
+      <code>funcao soma (a, b: inteiro) : inteiro</code>
+      <p>O último <code class="menor">inteiro</code> quer dizer que o valor de retorno que essa função dará é também um valor inteiro.
       </p>
-      <p>
-        Já nesse outro exemplo: <br>
-        <code>funcao parOuImpar (v: inteiro): caractere</code> <br>
-        A função <code class="menor">parOuImpar</code> vai receber uma variável do tipo inteiro e retornar um valor do tipo caractere.
-      </p>
+      <p>Já nesse outro exemplo: </p>
+      <code>funcao parOuImpar (v: inteiro): caractere</code>
+      <p>A função <code class="menor">parOuImpar</code> vai receber uma variável do tipo inteiro e retornar um valor do tipo caractere.</p>
       <p>O uso de parênteses no <code class="menor">retorne</code> da função é opcional.</p>
       <p>Ao trabalhar com função, o ideal é não escrever nada dentro do corpo da função, e sim retornar ao algoritmo principal pra que você possa escrever da maneira que achar melhor.</p>
     </section>
-
-    <hr>
 
     <!-- CAPÍTULO 12 -->
     <section id="capitulo_12" class="main-section">
       <header>Vetores</header>
       
       <h2>Definição</h2>
-      <p>Vetores são Variáveis Compostas Homogêneas Unidimensionais, pois conseguem armazenar vários valores de um mesmo tipo em uma mesma variável.</p>
+      <p>Vetores são <strong>Variáveis Compostas Homogêneas Unidimensionais</strong>, pois conseguem armazenar vários valores de um mesmo tipo em uma mesma variável.</p>
       <p>Um vetor pode ter vários espaços internos, identificados por índices. A maneira correta de se declarar um vetor está na linha a seguir:</p>
       <code>var v: vetor[1..10] de inteiro</code>
-      <p>A linha acima vai declarar uma variável v com 10 posições. Para inserir um valor dentro do vetor acima, podemos realizar a seguinte atribuição:</p>
+      <p>A linha acima vai declarar uma variável <code class="menor">v</code> com 10 posições. Para inserir um valor dentro do vetor acima, podemos realizar a seguinte atribuição:</p>
       <code>v[1] &lt;- 100</code>
-      <p>Na linha acima, o valor 100 será colocado na posição 1 do vetor v.</p>
+      <p>Na linha acima, o valor <code class="menor">100</code> será colocado na posição 1 do vetor <code class="menor">v</code>.</p>
       <p>Podemos também, permitir que o usuário digite os valores de cada posição, usando uma estrutura de repetição qualquer. Por exemplo:</p>
       <pre>
-        Para contador &lt;- 1 ate 10 faca
-           Escreva ("Digite um valor: ")
-           Leia v[contador]
-        FimPara
+      Para contador &lt;- 1 ate 10 faca
+        Escreva ("Digite um valor: ")
+        Leia v[contador]
+      FimPara
       </pre>
-      <p>A variável contador, do trecho acima, será um valor inteiro que vai contar cada uma das 10 posições. O usuário digitará cada um dos 10 valores e eles serão armazenados no vetor.</p>
+      <p>A variável <code class="menor">contador</code>, do trecho acima, será um valor inteiro que vai contar cada uma das 10 posições. O usuário digitará cada um dos 10 valores e eles serão armazenados no vetor.</p>
+      
       <h2>Notas</h2>
-      <p>Índice: é uma posição/endereço dentro do vetor.</p>
-      <p>Variáveis Compostas Homogêneas Unidimensionais = Vetor</p>
+      <p><strong>Índice</strong> é uma posição/endereço dentro do vetor.</p>
+      <p>Variáveis <strong>Compostas Homogêneas Unidimensionais</strong></p>
       <ul>
-        <li>Compostas ↔ variável composta de vários espaços.</li>
-        <li>Homogêneas ↔ todos os espaços da variável são do mesmo tipo</li>
-        <li>Unidimensionais ↔ para identificá-las, é necessário somente um endereço</li>
+        <li><strong>Compostas</strong> ↔ variável composta de vários espaços.</li>
+        <li><strong>Homogêneas</strong> ↔ todos os espaços da variável são do mesmo tipo</li>
+        <li><strong>Unidimensionais</strong> ↔ para identificá-las, é necessário somente um endereço</li>
       </ul>
-      <p>A principal vantagem de se usar vetores é que podemos guardar e recuperar esses valores guardados.</p>
-      <p>Em variáveis simples, lemos um valor e a partir do momento em que outro é lido, ele apaga o valor anterior. Não dá para voltar no tempo e dizer em quais posições foram digitados os valores.</p>
-      <p>Com vetores temos vários espaços em um mesma variável e, por conta disso, podemos voltar e trabalhar com os valores lidos.</p>
+      <p>A principal <strong>vantagem</strong> de se usar vetores é que podemos <strong>guardar e recuperar</strong> esses valores guardados.</p>
+      <p>Em <strong>variáveis simples</strong>, lemos um valor e a partir do momento em que outro é lido, ele apaga o valor anterior. Não dá para voltar no tempo e dizer em quais posições foram digitados os valores.</p>
+      <p>Com <strong>vetores</strong> temos vários espaços em um mesma variável e, por conta disso, podemos voltar e trabalhar com os valores lidos.</p>
+      
       <h2>Prints</h2>
+      
       <div class="imagens">
         <img src="imagens/aula14-img01.png" alt="Print da tela">
         <img src="imagens/aula14-img02.png" alt="Print da tela">
@@ -450,24 +468,25 @@
         <img src="imagens/aula14-img10.png" alt="Print da tela">
       </div>
     </section>
-    
-    <hr>
 
     <!-- CAPÍTULO 13 -->
     <section id="capitulo_13" class="main-section">
       <header>Matrizes</header>
+      
       <h2>Definição</h2>
-      <p>Matrizes são Variáveis Compostas Homogêneas Multidimensionais. Ao contrário dos vetores, para identificar um elemento em uma matriz é necessário usar mais de um índice (na maioria dos casos, apenas dois).</p>
+      <p>Matrizes são <strong>Variáveis Compostas Homogêneas Multidimensionais</strong>. Ao contrário dos vetores, para identificar um elemento em uma matriz é necessário usar mais de um índice (na maioria dos casos, apenas dois).</p>
       <p>Para declarar uma matriz 3x3, podemos usar a linha:</p>
       <code>m: vetor[1..3, 1..3] de inteiro</code>
       <p>Para referenciar um elemento da matriz declarada acima, fazemos assim:</p>
       <code>m[2,3] &lt;- 5</code>
       <p>O número 5 ficará, dentro dessa matriz, na linha 2 e na coluna 3.</p>
+      
       <h2>Notas</h2>
-      <p>Variáveis Compostas Homogêneas Multidimensionais = Matrizes</p>
       <p>Matriz 3x3 é também conhecida como matriz de terceira ordem.</p>
-      <p>O minuto 29:28 dessa aula é muito engraçado!</p>
+      <p>O minuto 29:28 dessa aula é muito engraçado.</p>
+      
       <h2>Prints</h2>
+      
       <div class="imagens">
         <img src="imagens/aula15-img01.png" alt="Print da tela">
         <img src="imagens/aula15-img02.png" alt="Print da tela">
@@ -476,16 +495,14 @@
         <img src="imagens/aula15-img05.png" alt="Print da tela">
         <img src="imagens/aula15-img06.png" alt="Print da tela">
       </div>
-      <hr>
-      <h2>Visualg: Conteúdo Extra</h2>
-      <p>
-        Caso a tela apareça sem nada, basta digitar: <br>
-        ! CTRL espaço
-      </p>
-      <p>
-        Para mudar a cor: <br>
-        Mudacor("AMARELO","FRENTE")
-      </p>
+    </section>
+
+    <section id="capitulo_14" class="main-section">
+      <header>Visualg: Conteúdo Extra</header>
+      <p>Caso a tela apareça sem nada, basta digitar:</p>
+      <code>! CTRL espaço</code>
+      <p>Para mudar a cor:</p>
+      <code>Mudacor("AMARELO","FRENTE")</code>
     </section>
   </main>
 
