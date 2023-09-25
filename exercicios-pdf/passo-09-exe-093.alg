@@ -3,6 +3,9 @@ Algoritmo "Passo-09-Exe-093"
 // receba tres valores como parametro: o inicio, o fim e o incremento
 // de uma contagem. O programa principal deve solicitar a digitacao desses
 // valores e passa-los ao procedimento, que vai mostrar a contagem na tela.
+// Ex: Para os valores de inicio (4), fim (20) e incremento(3) teremos
+// Contador(4, 20, 3) vai mostrar na tela:
+// 4 >> 7 >> 10 >> 13 >> 16 >> 19 >> FIM
 
 
 // VARIAVEIS DO PROGRAMA PRINCIPAL
@@ -19,8 +22,9 @@ i: inteiro
 inicio
 
 para i <- n_inicial ate n_final passo n_incremento faca
-   escreval (i)
+   escreva (i, " >>")
 fimpara
+escreval (" FIM")
 
 fimprocedimento
 
