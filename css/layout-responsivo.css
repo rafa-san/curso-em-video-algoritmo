@@ -1,5 +1,6 @@
 @media (min-width: 992px) {
   #navbar {
+    background-color: #fff;
     height: 100vh;
     overflow: auto;
     width: 340px;
@@ -33,6 +34,11 @@
 
   .main-section .imagens img {
     width: 95%;
+  }
+
+  #footer {
+    margin-left: 340px;
+    width: calc(100% - 340px);
   }
 }
 
