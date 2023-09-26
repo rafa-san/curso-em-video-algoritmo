@@ -6,7 +6,7 @@ v1, v2, s: inteiro
 
 
 // FUNCAO
-funcao soma (x, y: inteiro): inteiro
+funcao soma(x, y: inteiro): inteiro
 inicio
 retorne (x + y)
 fimfuncao
@@ -20,7 +20,7 @@ leia (v1)
 escreva ("Digite o segundo valor: ")
 leia (v2)
 
-s <- soma (v1, v2)
+s <- soma(v1, v2)
 
 escreva ("A soma de", v1, " +", v2, " e igual a:", s)
 
