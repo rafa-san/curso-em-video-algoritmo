@@ -27,7 +27,7 @@ inicio
 se (resultado1 >= 7) entao
    retorne ("aprovada(o)")
 senao
-   se (resultado1 <= 5) entao
+   se (resultado1 < 5) entao
       retorne ("reprovada(o)")
    senao
       retorne ("em recuperacao")
@@ -42,21 +42,20 @@ Inicio
 
 escreval ("          ESPACO DA(O) ESTUDANTE           ")
 escreval ("          Verifique sua situacao           ")
-escreval ("Informe nos campos abaixo suas notas finais")
 escreval ("===========================================")
 
 escreval ("-------------------------------------------")
-escreval ("|       MEDIA         |     SITUACAO      |")
+escreval ("|       MEDIA         |      SITUACAO     |")
 escreval ("| Maior ou igual a 7  |  Aprovado         |")
-escreval ("| Entre 5 e 6         |  Em Recuperacao   |")
-escreval ("| Menor ou igual a 4  |  Reprovado        |")
+escreval ("| Entre 5 e 6.99      |  Em Recuperacao   |")
+escreval ("| Abaixo de 5         |  Reprovado        |")
 escreval ("-------------------------------------------")
 
 escreval ()
-escreval ("Digite a primeira nota (entre 0 e 10):")
+escreval ("Digite a nota final do primeiro semestre:")
 escreva (">> ")
 leia (nota1)
-escreval ("Digite a segunda nota (entre 0 e 10):")
+escreval ("Digite a nota final do segundo semestre:")
 escreva (">> ")
 leia (nota2)
 
