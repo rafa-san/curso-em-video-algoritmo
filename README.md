@@ -1,9 +1,9 @@
-<h1>Atividades do Curso de Algoritmo</h1>
+# Atividades do Curso de Algoritmo
 
-<p>Este projeto reúne minhas anotações feitas ao longo do <strong>Curso de Algoritmo</strong>, do canal <strong>Curso em Vídeo</strong>, do professor <strong>Gustavo Guanabara</strong>.</p>
+Este projeto reúne as anotações que eu fiz ao longo do **Curso de Algoritmo**, do canal **Curso em Vídeo**, do professor **Gustavo Guanabara**.
 
-<p>Além das anotações, adicionei os <strong>exercícios</strong> feitos durante as aulas e os <strong>desafios</strong> propostos no fim delas.</p>
+Além das anotações, adicionei os **exercícios** feitos durante as aulas e os **desafios** propostos no fim delas.
 
-<p>Incluí também o PDF com uma lista de <strong>100 exercícios sem respostas</strong>. As minhas soluções para esses exercícios serão adicionadas ao repositório aos poucos.</p>
+E, por fim, incluí também o PDF com uma lista de **100 exercícios sem respostas** e as minhas soluções para eles.
 
-<p>Curso de extrema importância para desenvolver ou melhorar o raciocínio lógico e matemático e, principalmente, entender a estrutura e o funcionamento das linguagens de programação.</p>
+Curso de extrema importância para desenvolver ou melhorar o raciocínio lógico e matemático e, principalmente, entender a estrutura e o funcionamento das linguagens de programação.
