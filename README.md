@@ -9,15 +9,13 @@ O curso se destaca pelo carisma e didática do professor, características que e
 
 Além de ser essencial para desenvolver e aprimorar o raciocínio lógico e matemático, este curso é fundamental para compreender a estrutura e o funcionamento das linguagens de programação.
 
-## 2️⃣ Meu Objetivo
+## 2️⃣ Objetivo
 Organizar e compartilhar os materiais criados durante o curso, incluindo:
 
-- Minhas anotações ao longo das aulas;
+- Minhas anotações;
 - Os exercícios práticos realizados durante as aulas;
 - Os desafios propostos no fim das aulas;
 - Um PDF com 100 exercícios de fixação (sem respostas) e minhas soluções para eles.
-
-Este repositório também serve como referência para outros estudantes que desejam explorar os conteúdos do **Curso de Algoritmos**.
 
 ## 3️⃣ Tecnologias Utilizadas
 
@@ -28,7 +26,7 @@ Este repositório também serve como referência para outros estudantes que dese
 
 ### Ferramentas
 <div style="display:flex;">
-  <img src="https://img.shields.io/badge/VisualG-009B77?style=for-the-badge" alt="VisualG">&nbsp;<img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078D4?style=for-the-badge&logo=visual-studio-code&logoColor=white">&nbsp;<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">&nbsp;<img src="https://img.shields.io/badge/GitHub-404040?style=for-the-badge&logo=github&logoColor=white">
+  <img src="https://img.shields.io/badge/VisualG-F5DF4D?style=for-the-badge" alt="VisualG">&nbsp;<img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078D4?style=for-the-badge&logo=visual-studio-code&logoColor=white">&nbsp;<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">&nbsp;<img src="https://img.shields.io/badge/GitHub-404040?style=for-the-badge&logo=github&logoColor=white">
 </div>
 
 ## 4️⃣ Créditos
