@@ -31,16 +31,16 @@ cite a:hover {
 }
 
 code {
+  display: inline-block;
   background-color: var(--fundo);
   margin: 4px 8px;
   padding: 3px;
-  display: inline-block;
 }
 
 code.menor {
+  display: inline-block;
   margin: 1px 0;
   padding: 0 3px;
-  display: inline-block;
 }
 
 pre {
@@ -133,10 +133,10 @@ pre {
 }
 
 .main-section .imagens {
-  margin: 16px auto;
-  width: 98%;
   display: flex;
   flex-wrap: wrap;
+  margin: 16px auto;
+  width: 98%;
 }
 
 .main-section .imagens img {
@@ -156,6 +156,8 @@ pre {
 
 /* FOOTER */
 #footer {
+  display: flex;
+  flex-direction: column;
   background-color: var(--fundo);
   color: var(--cor_1);
   font-size: 1.1em;
@@ -163,8 +165,6 @@ pre {
   padding: 16px 8px;
   text-align: center;
   width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 #footer p {
@@ -179,4 +179,3 @@ pre {
   color: var(--cor_1);
   font-size: 1.3em;
 }
-
