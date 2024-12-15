@@ -30,7 +30,7 @@ Além de ser essencial para desenvolver e aprimorar o raciocínio lógico e mate
 </div>
 
 ## 4️⃣ Créditos
-Agradeço imensamente ao professor Gustavo Guanabara e à equipe do Curso em Vídeo pelo curso de qualidade e pelo acesso gratuito aos materiais.
+Agradeço imensamente ao professor **Gustavo Guanabara** e à equipe do **Curso em Vídeo** pelo excelente conteúdo e pelo acesso gratuito aos materiais.
 - <a href="https://www.cursoemvideo.com/" target="_blank">Curso em Vídeo - Site Oficial 🔗</a>
 - <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV" target="_blank">Curso em Vídeo no YouTube 🔗</a>
 
